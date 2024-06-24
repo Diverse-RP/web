@@ -1,0 +1,202 @@
+/* Základní styly pro tělo stránky */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Výška okna prohlížeče */
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Základní barva pozadí */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hlavička stránky */
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Navigační odkazy */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 20px;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Tlačítko pro přepínání tématu */
+.switch {
+    font-size: 17px;
+    position: absolute;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+    top: 20px;
+    right: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+.sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.switch:hover .sun svg {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.switch:hover .moon svg {
+    animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.input:checked + .slider {
+    background-color: #183153;
+}
+
+.input:focus + .slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+/* Obsah stránky */
+main {
+    flex: 1;
+    padding: 20px 10%;
+}
+
+/* Patička stránky */
+footer {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 7px 10%;
+    text-align: right;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: auto; /* Footer bude umístěn na spodku stránky */
+}
+
+/* Tmavé téma */
+.dark-theme {
+    background-color: #121212; /* Barva pozadí v tmavém režimu */
+    color: #f4f4f4;
+}
+
+.dark-theme header {
+    background-color: #1e1e1e;
+}
+
+.dark-theme nav a {
+    color: #f4f4f4;
+}
+
+.dark-theme nav a:hover {
+    color: #BB86FC;
+}
+
+.dark-theme nav a.active {
+    color: #BB86FC;
+}
+
+.dark-theme footer {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+.copyright {
+    font-size: 13px;
+}

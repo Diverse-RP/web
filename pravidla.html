@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web s Tmavým a Světlým Módem</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Domů</a>
+            <a href="pravidla.html">Pravidla</a>
+            <a href="workers.html">Spolipracovníci</a>
+        </nav>
+        <label class="switch">
+            <span class="sun">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g fill="#ffd43b">
+                        <circle r="5" cy="12" cx="12"></circle>
+                        <path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path>
+                    </g>
+                </svg>
+            </span>
+            <span class="moon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path>
+                </svg>
+            </span>
+            <input type="checkbox" class="input">
+            <span class="slider"></span>
+        </label>   
+        <body>
+
+            <style>
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            </style>
+
+            <nav>
+                <ul>
+                    <li><a href="#zakladni-pojmy" class="header" id="link-zakladni-pojmy">Základní pojmy</a></li>
+                    <li><a href="#zakladni-prikazy" class="header" id="link-zakladni-prikazy">Základní Příkazy</a></li>
+                    <li><a href="#obecna-pravidla" class="header" id="link-obecna-pravidla">Obecná Pravidla</a></li>
+                    <li><a href="#vykradani" class="header" id="link-vykradani">Vykrádání</a></li>
+                    <li><a href="#frakce" class="header" id="link-frakce">Frakce</a></li>
+                    <li><a href="#unosy" class="header" id="link-unosy">Únosy/okrádání</a></li>
+                    <li><a href="#pravidla-pro-streamery" class="header" id="link-pravidla-pro-streamery">Pravidla pro streamery</a></li>
+                </ul>
+            </nav>
+
+            <div id="zakladni-pojmy" class="section">
+                <h2>Základní pojmy</h2>
+                <p>RP (Roleplay) | Simulace reálného života ve hře FiveM</p>
+                <p>WL (Whitelist) | Zatím u nás nepotřebujete, ale aby jste mohli vlastnit frakci tak ho musíte mít, ale členové nemusí - Toto se netýká státních složek</p>
+                <p>LORE | Příběh vaší postavy. Každý může mít vlastní. Jestli chcete mít ve vašem loru něco neobvyklého tak to musíte mít sepsané a schválené v ticketu (schopnost ovládat vrtulník bez výcviku, alergie, atd)</p>
+                <p>OOC (Out Of Character) | Vše co se děje Mimo vaší postavu.</p>
+                <p>IC (In Charakter) | Vše co se děje ve hře.</p>
+                <p>L-OOC (Lokální Chat)| Chat určený k lokální OOC komunikaci.</p>
+                <p>FailRP | Výrazné porušení pravidel a narušení tím RP akce.</p>
+            </div>
+        
+            <div id="zakladni-prikazy" class="section">
+                <h2>Základní Příkazy</h2>
+                <p>/me | Nahrazuje animace, např: /me bere zbraň ze stolu</p>
+                <p>/do | Slouží k popisu činnosti, když očekáváte reakci od nějakého hráče.</p>
+                <p>/doc | Odpočet, který vyjadřuje jak dlouho daná činnosti probíhá. Příklad - /me obvazuje si nohu, /doc 10</p>
+                <p>/stav | Slouží jako popis na delší dobu (5 minut) Příklad - /stav má připnutou zbraň na popruhu</p>
+                <p>/try | Náhodná odpověď ano/ne. Příklad - /do povedlo se otevřít dveře? /try - ano/ne</p>
+            </div>
+        
+            <div id="obecna-pravidla" class="section">
+                <h2>Obecná Pravidla</h2>
+                <p>Bug | Bugy se erpí všechny, které nepůsobí ve váš prospěch. ●Je Přísně zakázáno zneužívat bugy!</p>
+                <p>Oblékání | Je zakázáno se oblékat jako státní složka a vydávat se za ní</p>
+                <p>Vypálení | Na vypálení podniku musíte mít schválený ticket od A-teamu.</p>
+            </div>
+        
+            <div id="vykradani" class="section">
+                <h2>Vykrádání</h2>
+                <p>PD mají povinnost vyjednávat s vykrádající stranou</p>
+                <p>Vykrádající mohou požadovat výkupné max. do 10000$</p>
+                <p>Vykrádající strana si nesmí volat pomoc od třetí strany během vykrádání, ale během naháněčky je to povoleno</p>
+                <p>Všichni vykrádající musí být uvnitř, toto se netýká vykrádání banky</p>
+            </div>
+        
+            <div id="frakce" class="section">
+                <h2>Frakce</h2>
+                <p>Jestli máte frakční discord musí tam být Supervisor nebo někdo vyšší.</p>
+                <p>Je povoleno prodávat frakce, ale po prodání jste povinni informovat A team</p>
+                <p>U nelegálních frakcí platí pravidlo Frakční CK - Šéf má automaticky schválené CK na ostatní členy jeho frakce.</p>
+            </div>
+        
+            <div id="unosy" class="section">
+                <h2>Únosy/okrádání</h2>
+                <p>Když někoho unášíš nesmíte ho držet déle jak hodinu reálného času.</p>
+                <p>Zloděj může okrást státní složky o všechno.</p>
+                <p>Nesmíte mít pasivního rukojmího.</p>
+                <p>Nesmíte nutit hráče aby na Vás přepsal majetek nebo vybral peníze z účtu a dal vám je.</p>
+            </div>
+        
+            <div id="pravidla-pro-streamery" class="section">
+                <h2>Pravidla pro streamery</h2>
+                <p>Pokud se hráč radí s admin teamem, nebo se účastní běžného rozhovoru či pohovoru, obsah této porady může streamovat pouze s povolením AT.</p>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    function updateHeaderHighlight() {
+                        const headers = document.querySelectorAll('.header');
+                        headers.forEach(header => header.classList.remove('active-header'));
+                        
+                        const sections = document.querySelectorAll('.section');
+                        let currentSection = null;
+        
+                        sections.forEach(section => {
+                            const rect = section.getBoundingClientRect();
+                            if (rect.top <= 50 && rect.bottom >= 50) {
+                                currentSection = section;
+                            }
+                        });
+        
+                        if (currentSection) {
+                            const activeLink = document.querySelector(`#link-${currentSection.id}`);
+                            activeLink.classList.add('active-header');
+                        }
+                    }
+        
+                    window.addEventListener('scroll', updateHeaderHighlight);
+                    updateHeaderHighlight();
+                });
+            </script>
+            
+        </body> 
+    </header>
+    <footer>
+        <p class="copyright">&copy; 2024 Štěpán Valíček</p>
+    </footer>
+</body>
+</html>
