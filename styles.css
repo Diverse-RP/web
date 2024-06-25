@@ -200,3 +200,51 @@ footer {
 .copyright {
     font-size: 13px;
 }
+
+/* Styly pro tabulku */
+.workers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.workers-table th, .workers-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.workers-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.workers-table td img.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.workers-table td a {
+    margin: 0 5px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.workers-table td a:hover {
+    color: #007BFF;
+}
+
+.dark-theme .workers-table th {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+.dark-theme .workers-table td a {
+    color: #f4f4f4;
+}
+
+.dark-theme .workers-table td a:hover {
+    color: #BB86FC;
+}
