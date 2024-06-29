@@ -1,10 +1,12 @@
+*  */
+
 /* Základní styly pro tělo stránky */
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Výška okna prohlížeče */
+    min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #fff; /* Základní barva pozadí */
+    background-color: #fff;
     color: #333;
     margin: 0;
     padding: 0;
@@ -155,8 +157,45 @@ nav a:hover {
 
 /* Obsah stránky */
 main {
+    display: flex;
     flex: 1;
     padding: 20px 10%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    padding-right: 20px;
+    position: fixed; /* Fix the sidebar position */
+    top: 80px; /* Adjust this value based on your header height */
+    left: 10%; /* Adjust this value based on your layout */
+    height: calc(100% - 80px); /* Adjust this value based on your header height */
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #007BFF;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    margin-left: 220px; /* Adjust this value based on the sidebar width */
 }
 
 /* Patička stránky */
@@ -197,54 +236,10 @@ footer {
     color: #f4f4f4;
 }
 
-.copyright {
-    font-size: 13px;
-}
-
-/* Styly pro tabulku */
-.workers-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-.workers-table th, .workers-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-.workers-table th {
-    background-color: #f4f4f4;
-    color: #333;
-    font-weight: bold;
-}
-
-.workers-table td img.profile-pic {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.workers-table td a {
-    margin: 0 5px;
-    color: #333;
-    transition: color 0.3s;
-}
-
-.workers-table td a:hover {
-    color: #007BFF;
-}
-
-.dark-theme .workers-table th {
-    background-color: #1e1e1e;
+.dark-theme .sidebar ul li a {
     color: #f4f4f4;
 }
 
-.dark-theme .workers-table td a {
-    color: #f4f4f4;
-}
-
-.dark-theme .workers-table td a:hover {
+.dark-theme .sidebar ul li a:hover {
     color: #BB86FC;
 }
