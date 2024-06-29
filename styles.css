@@ -201,7 +201,7 @@ footer {
     font-size: 13px;
 }
 
-/* Styly pro tabulku */
+/* Styly pro tabulku s workers*/
 .workers-table {
     width: 100%;
     border-collapse: collapse;
@@ -246,5 +246,54 @@ footer {
 }
 
 .dark-theme .workers-table td a:hover {
+    color: #BB86FC;
+}
+
+/* Styly pro tabulku s kody*/
+.kody-table {
+    width: 39%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    margin: auto;
+}
+
+.kody-table th, .kody-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.kody-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.kody-table td img.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.kody-table td a {
+    margin: 0 5px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.kody-table td a:hover {
+    color: #007BFF;
+}
+
+.dark-theme .kody-table th {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+.dark-theme .kody-table td a {
+    color: #f4f4f4;
+}
+
+.dark-theme .kody-table td a:hover {
     color: #BB86FC;
 }
