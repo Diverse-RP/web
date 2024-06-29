@@ -2,4 +2,4 @@ RewriteEngine on
 RewriteRule ^index index.html [NC]
 RewriteRule ^pravidla pravidla.html [NC]
 RewriteRule ^spolupracovnici workers.html [NC]
-RewriteRule ^spolupracovnicidokumentace docs.html [NC]
+RewriteRule ^dokumentace docs.html [NC]
