@@ -38,39 +38,35 @@
         </label>    
     </header>
     <main>
-        <table class="workers-table">
-            <thead>
-                <tr>
-                    <th>Název Frakce</th>
-                    <th>Je Zabraná Frakce</th>
-                    <th>Majitel Frakce</th>
-                    <th>Obrázek Frakce</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Frakce A</td>
-                    <td>Ano</td>
-                    <td>Jan Novák</td>
-                    <td><img src="obrazekA.jpg" alt="Frakce A"></td>
-                </tr>
-                <tr>
-                    <td>Frakce B</td>
-                    <td>Ne</td>
-                    <td>-</td>
-                    <td><img src="obrazekB.jpg" alt="Frakce B"></td>
-                </tr>
-                <tr>
-                    <td>Frakce C</td>
-                    <td>Ano</td>
-                    <td>Petr Svoboda</td>
-                    <td><img src="obrazekC.jpg" alt="Frakce C"></td>
-                </tr>
-            </tbody>
-        </table>
+        <section class="gallery-section">
+            <h2>Frakce: Bahama Mamas </h2>
+            <p>Majitel: Starosta</p>
+            <p>Status: Volná</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/frakce/Volné Podniky.pdf-image-003.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/frakce/Volné Podniky.pdf-image-004.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/frakce/Volné Podniky.pdf-image-005.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Další frakce mohou být přidány zde -->
+
     </main>
     <footer>
         <p class="copyright">&copy; 2024 Štěpán Valíček</p>
     </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
 </body>
 </html>
